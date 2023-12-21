@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+<!--    <group>-->
+
+<!--        <item-->
+<!--            android:id="@+id/Home"-->
+<!--            android:title="Home"-->
+<!--            android:icon="@drawable/baseline_home_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/Location"-->
+<!--            android:title="Location"-->
+<!--            android:icon="@drawable/baseline_location_on_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/orders"-->
+<!--            android:title="Orders"-->
+<!--            android:icon="@drawable/orders_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/profile"-->
+<!--            android:title="Profile"-->
+<!--            android:icon="@drawable/baseline_person_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/terms"-->
+<!--            android:title="Terms and Condition"-->
+<!--            android:icon="@drawable/baseline_library_books_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/aboutus"-->
+<!--            android:title="About Us"-->
+<!--            android:icon="@drawable/baseline_info_24"-->
+<!--            >-->
+<!--        </item>-->
+
+<!--        <item-->
+<!--            android:id="@+id/logout"-->
+<!--            android:title="Log out"-->
+<!--            android:icon="@drawable/baseline_login_24"-->
+<!--            >-->
+<!--        </item>-->
+
+
+<!--    </group>-->
+
+
+</menu>

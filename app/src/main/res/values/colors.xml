@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="statusBarColor">#0E2E43</color>
+    <color name="tabColor">#133D59</color>
+    <color name="purple">#3B5DE9</color>
+
+</resources>

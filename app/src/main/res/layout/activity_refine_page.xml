@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefinePage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="5dp"
+        android:background="@color/tabColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_gravity="start"
+            android:paddingStart="5dp"
+            android:clickable="true"
+           android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refine"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginStart="50dp"
+            ></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/toolbar"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:orientation="vertical"
+      android:layout_marginTop="20dp"
+      >
+
+      <TextView
+          android:id="@+id/textview1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="serif"
+          android:text="Select your Availability"
+          android:textColor="#BF000000"
+          android:textSize="14dp"
+          android:textStyle="bold"></TextView>
+
+
+      <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edit_back"
+          android:padding="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@id/dropdown_icon"
+          android:entries="@array/options"
+          >
+
+
+      </Spinner>
+
+      <ImageView
+          android:id="@+id/dropdown_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baseline_arrow_drop_down_24"
+          android:layout_marginTop="-33dp"
+          android:layout_marginEnd="10dp"
+          android:layout_gravity="end"
+           android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+
+
+
+
+      <TextView
+          android:id="@+id/tv2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="serif"
+          android:text="Add Your Status"
+          android:textColor="#BF000000"
+          android:textSize="14dp"
+          android:layout_marginTop="12dp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/textArea"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edit_back"
+          android:padding="10dp"
+          android:maxLength="250"
+          android:text="Hi community! I am open to new connections \n &quot;😊&quot; \n"
+          android:maxLines="5"
+          android:textSize="13dp"
+          android:layout_marginTop="6dp"
+          >
+      </EditText>
+
+      <TextView
+          android:id="@+id/textCounter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+
+          />
+
+
+      <TextView
+          android:id="@+id/tv3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="serif"
+          android:text="Select Hyper local Distance"
+          android:textColor="#BF000000"
+          android:textSize="14sp"
+          android:layout_marginTop="12dp"
+          android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        style="@style/tooltip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="100"
+        android:value="50"
+        app:labelBehavior="visible"
+        app:trackHeight="2dp"
+        app:labelStyle="@style/tooltip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Km"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 Km"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="14dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+      <TextView
+          android:id="@+id/tv4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="serif"
+          android:text="Select Purpose"
+          android:textColor="#BF000000"
+          android:textSize="14sp"
+          android:layout_marginTop="18dp"
+          android:textStyle="bold" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="14dp"
+    >
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textSize="12dp"
+        android:background="@drawable/btn_pressed"
+        android:textColor="@color/white"
+        android:text="Coffee"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="9dp"
+        android:clickable="true"
+        android:textSize="12dp"
+        android:focusable="true"
+        android:background="@drawable/btn_normal"
+        android:text="Business"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textSize="12dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/btn_normal"
+        android:text="Hobbies"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAllCaps="false" />
+
+</LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="14dp"
+          >
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn4"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:textSize="12dp"
+              android:background="@drawable/btn_normal"
+              android:text="Friendship"
+              android:clickable="true"
+              android:focusable="true"
+              android:textAllCaps="false" />
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn5"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:textSize="12dp"
+              android:layout_marginStart="9dp"
+              android:background="@drawable/btn_normal"
+              android:text="Movies"
+              android:clickable="true"
+              android:focusable="true"
+              android:textAllCaps="false" />
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn6"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:textSize="12dp"
+              android:layout_marginStart="9dp"
+              android:background="@drawable/btn_normal"
+              android:text="Dinning"
+              android:clickable="true"
+              android:focusable="true"
+              android:textAllCaps="false" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="14dp"
+          >
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn7"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:textSize="12dp"
+              android:background="@drawable/btn_normal"
+              android:text="Dating"
+              android:clickable="true"
+              android:focusable="true"
+              android:textAllCaps="false" />
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btn8"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:textSize="12dp"
+              android:layout_marginStart="9dp"
+              android:clickable="true"
+              android:focusable="true"
+              android:background="@drawable/btn_normal"
+              android:text="Matrimony"
+              android:textAllCaps="false" />
+
+
+      </LinearLayout>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/save"
+          android:layout_width="180dp"
+          android:layout_height="37dp"
+          android:background="@drawable/btn_bg"
+          android:text="Save and Exxplore"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"
+          android:clickable="true"
+          android:focusable="true" />
+
+
+
+  </LinearLayout>
+
+</RelativeLayout>

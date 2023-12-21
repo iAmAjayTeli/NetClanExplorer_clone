@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Assigment" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/statusBarColor</item>
+        <item name="statusBarBackground">@color/statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.Assigment" parent="Base.Theme.Assigment" />
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Change the text size for the query hint -->
+        <item name="android:textSize">5dp</item>
+    </style>
+
+</resources>
